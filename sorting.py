@@ -22,7 +22,7 @@ def convertToMaxheap(lst: list[int], d):
 
     for k in range(1, d + 1):
         if(lst[lastNode] < lst[returnChild(lst, lst[lastNode], k, d)]):
-            swap(lastNode, returnChild(lst, lst[lastNode], k, d))
+            swap(lst, lastNode, returnChild(lst, lst[lastNode], k, d))
 
     pass
 
