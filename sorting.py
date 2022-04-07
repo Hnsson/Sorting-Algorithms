@@ -14,6 +14,8 @@ def heapsort(lst: list[int], d:	int	= 2):
 
     return 3
 
+test_1 = [2, 10, 69, 6, 9, 11, 4]
+
 def convertToMaxheap(lst: list[int], d):
     #Last non-leaf node:
     lastNode = len(lst) - 2 / d
@@ -24,13 +26,14 @@ def convertToMaxheap(lst: list[int], d):
         if(lst[lastNode] < lst[returnChild(lst, lst[lastNode], k, d)]):
             swap(lst, lastNode, returnChild(lst, lst[lastNode], k, d))
 
-    pass
+print(test_1)
 
+convertToMaxheap(test_1, 2)
 
-
+print(test_1)
 
 def returnChild(lst: list[int], i, k, d: int = 2):
-    return lst[(d*i) + k]
+    return (d*i) + k
 
 def leftChild(lst: list[int], i):
     return lst[2*i + 1]
