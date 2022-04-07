@@ -1,0 +1,11 @@
+
+INFO [L:51] 
+Testing if the required functions are implemented. (['quicksort_pivot_first', 'quicksort_pivot_median', 'heapsort'])
+
+INFO [L:59] All required functions are there.
+
+
+INFO [L:94] Quicksort sortorder corrupt.
+
+
+INFO [L:184] Failed sorting for Quicksort
